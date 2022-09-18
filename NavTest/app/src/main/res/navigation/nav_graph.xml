@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/chooserFragment">
+    <fragment
+        android:id="@+id/chooserFragment"
+        android:name="nz.ac.canterbury.rto45.navtest.ChooserFragment"
+        android:label="fragment_chooser"
+        tools:layout="@layout/fragment_chooser" >
+        <action
+            android:id="@+id/action_chooserFragment_to_choice1Fragment"
+            app:destination="@id/choice1Fragment" />
+        <action
+            android:id="@+id/action_chooserFragment_to_choice2Fragment"
+            app:destination="@id/choice2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/choice1Fragment"
+        android:name="nz.ac.canterbury.rto45.navtest.choice1Fragment"
+        android:label="fragment_choice1"
+        tools:layout="@layout/fragment_choice1" />
+    <fragment
+        android:id="@+id/choice2Fragment"
+        android:name="nz.ac.canterbury.rto45.navtest.choice2Fragment"
+        android:label="fragment_choice2"
+        tools:layout="@layout/fragment_choice2" />
+
+</navigation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/entryFragment">
+
+    <fragment
+        android:id="@+id/entryFragment"
+        android:name="nz.ac.canterbury.seng440.connect440live.EntryFragment"
+        android:label="fragment_entry"
+        tools:layout="@layout/fragment_entry" >
+        <action
+            android:id="@+id/action_entryFragment_to_viewFriendsFragment"
+            app:destination="@id/viewFriendsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewFriendsFragment"
+        android:name="nz.ac.canterbury.seng440.connect440live.ViewFriendsFragment"
+        android:label="fragment_friends_list"
+        tools:layout="@layout/fragment_view_friends" />
+</navigation>
